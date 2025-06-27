@@ -75,3 +75,10 @@ document.querySelectorAll('.copy-text').forEach(elem => {
   });
 });
 
+window.addEventListener('resize', () => {
+  document.querySelectorAll('*').forEach(el => {
+    if (el.scrollWidth > document.documentElement.clientWidth) {
+      console.warn('Overflowing element:', el);
+    }
+  });
+});

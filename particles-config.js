@@ -5,7 +5,7 @@ tsParticles.load("tsparticles", {
       value: 50,
       density: { enable: true, area: 800 }
     },
-    color: { value: "#ea580c" },
+    color: { value: "ea0c0c" },
     shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 3 },
@@ -18,7 +18,7 @@ tsParticles.load("tsparticles", {
     links: {
       enable: true,
       distance: 120,
-      color: "#ea580c",
+      color: "#ea0c0c",
       opacity: 0.4,
       width: 1
     }
