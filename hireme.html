@@ -177,14 +177,15 @@
     <p>I’m always up for a chat or a coffee! Feel free to reach out.</p>
     <div class="contact-button">
      <!-- Email -->
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lk149466@gmail.com"
-            onclick="copyToClipboard('lk149466@gmail.com')"
-            target="_blank">
-            <i class="fas fa-envelope"></i> lk149466@gmail.com
+        <a href="#"
+          onclick="handleEmailClick(); return false;"
+          id="email-link">
+          <i class="fas fa-envelope"></i> lk149466@gmail.com
         </a>
 
+
         <!-- Phone -->
-        <a href="tel:+919876543210"
+        <a href="tel:+919667645876"
             onclick="copyToClipboard('+919667645876')">
             <i class="fas fa-phone"></i> +91 9667645876
         </a>
@@ -209,6 +210,33 @@
         });
     }
     </script>
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          console.log("Email copied to clipboard!");
+        });
+      }
+
+      function handleEmailClick() {
+        const email = "lk149466@gmail.com";
+        const subject = "Hi Lalit!";
+        const body = "I'm reaching out regarding...";
+
+        copyToClipboard(email);
+
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (isMobile) {
+          const gmailAppUrl = `googlegmail:///co?to=${email}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          setTimeout(() => {
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank");
+          }, 500);
+          window.location = gmailAppUrl;
+        } else {
+          window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank");
+        }
+      }
+    </script>
+
 
 </body>
 </html>

@@ -19,7 +19,10 @@ html {
 body{
   background: var(--bg-color);
   color: var(--text-color);
+  /* overflow-x: hidden; */
 }
+
+
 .header{
   position: fixed;
   width: 100%;
@@ -607,7 +610,9 @@ section{
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
     padding: 1rem 3rem;
     background: rgba(0, 0, 0, 0.8);
     border-bottom-left-radius: 2rem;
