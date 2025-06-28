@@ -11,7 +11,12 @@
   --bg-color: #080808;
   --second-bg-color: #101010;
   --text-color: white;
-  --main-color: #ea0c0c;
+  --main-color: #4285F4;
+  --bacground-gradient: linear-gradient(
+    270deg,
+    #4285F4 10%,
+    #4285F4 100%
+  );
 }
 html {
   font-size: 56%;
@@ -57,11 +62,7 @@ body{
   transition: transform 0.3s ease;
 }
 span{
-  background: linear-gradient(
-    270deg,
-    #ffffff 10%,
-    #de0700 100%
-  );
+  background: var(--bacground-gradient);
   background-clip: text;
   color: transparent;
 }
@@ -89,13 +90,10 @@ span{
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border-radius: 3rem ;
-  background: linear-gradient(
-    270deg,
-    #ffffff 10%,
-    #de0700 100%
+  background: var(--bacground-gradient);
     /* #DE8908 10%,
     #ff1d15 100% */
-  );
+    
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
