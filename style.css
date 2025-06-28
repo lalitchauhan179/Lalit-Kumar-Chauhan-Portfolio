@@ -52,6 +52,10 @@ body{
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
+/* .logo img{
+  width: 20%;
+  height: 20%;
+} */
 .logo:hover{
   transform: scale(1.1);
 }
@@ -489,8 +493,20 @@ section{
   margin: 5rem 0;
   text-align: center;
 }
-.contact form .input-box input,
+.contact form .input-box input{
+  height: 6rem;
+  width: 80%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
+}
 .contact form textarea{
+  height: 20rem;
   width: 100%;
   padding: 2.5rem;
   font-size: 1.8rem;
