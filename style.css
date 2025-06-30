@@ -25,7 +25,7 @@
   --main-color: #4285F4;
 }
 [data-theme="light"] {
-  --bg-color: #f8f8f8;
+  --bg-color: #ffffff;
   --second-bg-color: #ffffff;
   --text-color: #111;
   --main-color: #0057e7;
@@ -636,7 +636,7 @@ section{
   margin-left: 20px;
 }
 .footer ul li a{
-  color: white;
+  color: var(--text-color);
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
 }
