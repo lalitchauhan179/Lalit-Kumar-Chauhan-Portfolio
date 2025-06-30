@@ -37,6 +37,7 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
           </nav>
+          <button id="theme-toggle" title="Toggle Dark/Light" class="theme-btn">🌓</button>
 
           <a href="hireme.html" class="gradient-btn">Contact Me</a>
 
@@ -121,60 +122,80 @@
 
     </section>
 
-    <section class="resume" id="resume" data-aos="fade-up">
+    <section class="resume" id="resume">
       <h2 class="heading" data-aos="fade-up">My <span>Resume</span></h2>
 
-      <div class="resume-container">
-        <!-- Experience-->
-        <div class="resume-column" data-aos="fade-right">
+      <canvas id="starfall"></canvas>
+
+      <div class="resume-wrapper">
+        <!-- Experience Section -->
+        <div class="resume-block" data-aos="fade-right">
           <h3>💼 Experience</h3>
-          <div class="resume-item">
-            <video src="idz.mp4.mp4" controls muted loop></video>
-            <h4> Game Developer –  IDZ Digital pvt ltd</h4>
-            <span>Oct 2024 – Feb 2025</span>
-            <p>Spearheaded the development of high-quality mobile games using Godot Engine, Unity 2D/3D, and Android 
-                Studio, ensuring seamless gameplay, interactive mechanics, and immersive user experiences that elevated the 
-                company’s gaming portfolio.
+
+          <div class="resume-card">
+            <!-- <video src="idz.mp4.mp4" controls muted loop></video> -->
+            <div class="resume-text">
+              <h4>Game Developer – IDZ Digital Pvt Ltd</h4>
+              <span>Oct 2024 – Feb 2025</span>
+              <p>
+                Spearheaded the development of 10+ high-quality mobile games using Godot Engine, Unity 2D/3D, and Android 
+                Studio, resulting in a 35% increase in user engagement and significantly enhancing the company’s gaming portfolio.
                 <br><br>
-                Optimized game performance through mobile-specific techniques, reducing load times, enhancing frame rates, and 
-                ensuring smooth cross-platform compatibility.
+                Optimized game performance by implementing mobile-specific techniques, achieving 40% faster load times, 60+ 
+                FPS stability, and 100% crash-free sessions across Android devices.
                 <br><br>
-                Led the integration of AdMob for in-game advertising, strategically implementing monetization strategies that 
-                boosted revenue streams while maintaining a non-intrusive user experience.
+                Led the integration of AdMob, strategically placing ads to boost monetization; increased in-game ad revenue by 
+                20% while maintaining a 4.5+ user rating for gameplay experience.
                 <br><br>
-                Actively collaborated with designers, artists, and developers, driving rapid prototyping.</p>
-          </div>
-          <div class="resume-item">
-            <h4>Software Trainee Intern – Spareprovider.com</h4>
-            <span>Jan 2024 – Jul 2024</span>
-            <p>Worked as a Intern for my university training. Developed an Employee Management System using Python, Django, RESTful APIs, Bootstrap, and MongoDB, MySQL, enabling real
-                time data access, updates, and predictive insights with up to 98% accuracy.
-                <br><br>
-                Designed an interactive dashboard that boosted productivity by 85% and reduced absenteeism by 72%, through efficient data 
-                preprocessing and real-time performance tracking
+                Collaborated with cross-functional teams including designers, artists, and developers, facilitating rapid prototyping 
+                and deployment of 5+ games within 5-month cycles
               </p>
+            </div>
           </div>
-          <div class="resume-item">
-            <video src="freelance work.mp4" controls muted loop></video>
-            <h4>Freelancer</h4>
-            <span></span>
-            <p>Worked as a freelance Unity developer on high-end game projects, contributing to both new game development and updating existing titles. Handled gameplay mechanics, bug fixes, performance optimization, and feature enhancements. Collaborated with clients to deliver polished experiences across platforms, ensuring smooth gameplay and meeting project goals efficiently.
+
+          <div class="resume-card">
+            <div class="resume-text">
+              <h4>Software Trainee Intern – Spareprovider.com</h4>
+              <span>Jan 2024 – Jul 2024</span>
+              <p>
+                Developed an Employee Management System using Python, Django, RESTful APIs, Bootstrap, and MongoDB, 
+                MySQL, enabling real-time data access, updates, and predictive insights with up to 98% accuracy.
+                <br><br>
+                Designed an interactive dashboard that boosted productivity by 85% and reduced absenteeism by 72%, through 
+                efficient data preprocessing and real-time performance tracking
               </p>
+            </div>
           </div>
-          
+
+          <div class="resume-card">
+            <!-- <video src="freelance work.mp4" controls muted loop></video> -->
+            <div class="resume-text">
+              <h4>Freelancer</h4>
+              <p>
+                Contributed to gameplay mechanics, bug fixes, and performance optimization on freelance Unity game projects. Delivered polished experiences across multiple platforms.
+              </p>
+            </div>
+          </div>
         </div>
-          <!--Education-->
-        <div class="resume-column" data-aos="fade-left" data-aos-delay="200">
+
+        <!-- Education Section -->
+        <div class="resume-block" data-aos="fade-left" data-aos-delay="200">
           <h3>🎓 Education</h3>
-          <div class="resume-item">
-            <h4>Master of Computer Applications (MCA)</h4>
-            <span>2022 – 2024</span>
-            <p> J.C Bose University of Science and Technology, Faridabad</p>
+
+          <div class="resume-card">
+            <div class="resume-text">
+              <h4>Master of Computer Applications (MCA)</h4>
+              <span>2022 – 2024</span>
+              <p>J.C Bose University of Science and Technology, Faridabad</p>
+            </div>
           </div>
-          <div class="resume-item">
-            <h4>Bachelor of Computer Applications (BCA)</h4>
-            <span>2019 – 2022</span>
-            <p> J.C Bose University of Science and Technology, Faridabad</p>
+
+          <div class="resume-card">
+            <div class="resume-text">
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <span>2019 – 2022</span>
+              <p>J.C Bose University of Science and Technology, Faridabad</p>
+            </div>
           </div>
         </div>
       </div>
